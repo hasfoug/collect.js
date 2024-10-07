@@ -295,7 +295,7 @@ declare module 'collect.js' {
     /**
      * The prepend method adds an item to the beginning of the collection.
      */
-    prepend<K, V>(value: V, key?: K): this;
+    prepend<K, V>(value: V, key?: K): Collection<Item>;
 
     /**
      * The pull method removes and returns an item from the collection by its key.
