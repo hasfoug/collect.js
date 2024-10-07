@@ -452,7 +452,7 @@ declare module 'collect.js' {
     /**
      * The unless method will execute the given callback when the first argument given to the method evaluates to false.
      */
-    unless(value: boolean, fn: (this: any) => any, defaultFn?: (this: any) => any): Collection<Item>|any;
+    unless(condition: boolean, fn: (collection: Collection<Item>) => Collection<Item>, defaultFn?: (collection: Collection<Item>) => Collection<Item>): Collection<Item>;
 
     /**
      * The unwrap method will unwrap the given collection.
@@ -467,7 +467,7 @@ declare module 'collect.js' {
     /**
      * The when method will execute the given callback when the first argument given to the method evaluates to true.
      */
-    when(condition: boolean, fn: (this: any) => any, defaultFn?: (this: any) => any): Collection<Item>|any;
+    when(condition: boolean, fn: (collection: Collection<Item>) => Collection<Item>, defaultFn?: (collection: Collection<Item>) => Collection<Item>): Collection<Item>;
 
     /**
      * The where method filters the collection by a given key / value pair.
