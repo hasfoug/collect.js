@@ -418,7 +418,7 @@ declare module 'collect.js' {
     /**
      * The times method creates a new collection by invoking the callback a given amount of times.
      */
-    times<T>(times: number, fn: (time: number) => T): T[];
+    times<T>(times: number, fn: (time: number) => T): Collection<T>;
 
     /**
      * The toArray method converts the collection into a plain array.
